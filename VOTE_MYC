@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+int age,yob,ch,y;
+cout<<"ELIGIBLE FOR VOTE OR NOT"<<endl;
+cout<<"Press 1 for age and 2 for year OF birth"<<endl;
+cout<<"Enter your choice ";
+cin>>ch;
+switch(ch)
+{
+case 1:
+cout<<"Enter the age of person"<<endl;
+cin>>age;
+if(age>=18)
+{
+cout<<"You are eligible"<<endl;
+}
+else
+{
+cout<<"you are not eligible"<<endl;
+}
+break;
+case 2:
+cout<<"Enter present year in YYYY"<<endl;
+cin>>y;
+cout<<"ENTER your YEAR OF BIRTH in YYYY"<<endl;
+cin>>yob;
+if(y-yob>=18)
+{
+cout<<"YOU ARE ELIGIBLE "<<endl;
+}
+else
+cout<<"YOU ARE NOT ELIGIBLE"<<endl;
+break;
+default:
+cout<<"INVALID choice"<<endl;
+break;
+    
+}
+return 0;
+}
+
